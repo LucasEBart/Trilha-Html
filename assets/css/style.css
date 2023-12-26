@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Adicione esta parte ao seu arquivo style.css ou inclua diretamente no cabeçalho HTML dentro de uma tag <style> */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li::before {
+    content: "\2022"; /* Código Unicode para o ponto (•) */
+    color: black; /* Cor do ponto (você pode personalizar a cor) */
+    display: inline-block;
+    width: 1em; /* Espaçamento entre o ponto e o texto */
+    margin-left: 0em; /* Alinhar o ponto com o texto */
+    font-size: 1.5em; /* Tamanho do ponto (você pode ajustar conforme necessário) */
+    line-height: 1.2em; /* Altura da linha (ajuste conforme necessário) */
+    margin-right: 0.5em; /* Espaçamento entre o ponto e o texto (ajuste conforme necessário) */
+  }
+  
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+figure {
+    text-align: center;
+}
